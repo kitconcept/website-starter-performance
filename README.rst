@@ -14,6 +14,7 @@ Install basic dependencies::
 
   $ npm install webpack --save-dev
   $ npm install babel-loader@5.3.2 --save-dev
+  $ npm install html-webpack-plugin --save-dev
 
 Create webpack configuration file::
 
@@ -32,4 +33,17 @@ Performance
 Install PSI globally::
 
   $ npm install --save psi
+
+Deployment
+----------
+
+Deploy to Heroku.
+
+Create Heroku instance::
+
+  $ heroku create
+
+Push repository to Heroku::
+
+  $ git push heroku master
 
