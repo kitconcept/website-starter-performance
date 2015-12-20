@@ -6,7 +6,9 @@
   "scripts": {
     "dev": "webpack-dev-server --inline --port 3000 --content-base public/",
     "build": "webpack",
-    "lint": "eslint src/ ; true"
+    "lint": "eslint src/ ; true",
+    "postinstall": "webpack --config ./webpack-prod.config.js --progress --colors",
+    "start": "node server.js"
   },
   "engines": {
     "node": "4.2.1"
@@ -33,6 +35,8 @@
   },
   "dependencies": {
     "bootstrap": "^3.3.5",
-    "jquery": "^2.1.4"
+    "express": "^4.13.3",
+    "jquery": "^2.1.4",
+    "webpack-dev-server": "^1.14.0"
   }
 }
