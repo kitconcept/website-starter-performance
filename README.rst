@@ -23,3 +23,13 @@ Install dependencies::
 
   $ npm install bootstrap
   $ npm install jquery
+
+
+
+Performance
+-----------
+
+Install PSI globally::
+
+  $ npm install --save psi
+
