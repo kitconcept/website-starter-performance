@@ -12,7 +12,12 @@ module.exports = {
     new HtmlWebpackPlugin({
       title: 'Website Starter',
       template: 'src/index.html'
-    })
+    }),
+    new webpack.ProvidePlugin({
+      $: "jquery",
+      jQuery: "jquery",
+      "_": "underscore",
+    }),
   ],
   module: {
     loaders: [

@@ -1,9 +1,6 @@
 import $ from 'jquery';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.js';
+import './carousel.css';
 
-$(document).ready(() => {
-  $('#root').append(
-    $(`<button type="button" class="btn btn-default">
-                <span class="glyphicon glyphicon-ok-sign"></span>
-              </button>`));
-});
+$(document).ready(() => {});
