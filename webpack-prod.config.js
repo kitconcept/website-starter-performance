@@ -10,9 +10,14 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      title: 'hi',
-      template: 'index.html'
-    })
+      title: 'Website Starter',
+      template: 'src/index.html'
+    }),
+    new webpack.ProvidePlugin({
+      $: "jquery",
+      jQuery: "jquery",
+      "_": "underscore",
+    }),
   ],
   module: {
     loaders: [
