@@ -10,7 +10,7 @@
     "postinstall": "webpack --config ./webpack-prod.config.js --progress --colors",
     "start": "node server.js",
     "deploy": "ssh kitconcept@kitconcept.com 'cd /srv/psi.kitconcept.com; git checkout -f master; git pull; npm install; npm run build'",
-    "performance": "psi psi.kitconcept.com"
+    "performance": "psi psi.kitconcept.com --threshold 100 ; true"
   },
   "engines": {
     "node": "4.2.1"
