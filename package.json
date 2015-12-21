@@ -5,10 +5,12 @@
   "main": "src/index.js",
   "scripts": {
     "dev": "webpack-dev-server --inline --port 3000 --content-base public/",
-    "build": "webpack",
+    "build": "webpack -p",
     "lint": "eslint src/ ; true",
     "postinstall": "webpack --config ./webpack-prod.config.js --progress --colors",
-    "start": "node server.js"
+    "start": "node server.js",
+    "deploy": "ssh kitconcept@kitconcept.com 'cd /srv/psi.kitconcept.com; git checkout -f master; git pull; npm install; npm run build'",
+    "performance": "psi psi.kitconcept.com"
   },
   "engines": {
     "node": "4.2.1"
