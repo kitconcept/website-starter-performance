@@ -27,12 +27,29 @@ Install dependencies::
 
 
 
-Performance
------------
+Page Speed Insights
+-------------------
 
 Install PSI globally::
 
   $ npm install --save psi
+
+WebPageTest
+-----------
+
+Install WebPageTest globally:
+
+  $ npm install webpagetest -g
+
+Request WebPageTest API key at...
+
+Export WebPageTest API key on command line::
+
+  $ export WEBPAGETEST_API_KEY=<INSERT_API_KEY_HERE>
+
+Run WebPageTest:
+
+  $ npm run webpagetest
 
 Image Optimization
 ------------------
