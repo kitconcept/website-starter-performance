@@ -1,0 +1,20 @@
+{
+    "median": {
+        "firstView": {
+            "breakdown": {
+                "js": {
+                    "requests": 2,
+                    "bytes": 20000
+                },
+                "css": {
+                    "requests": 1,
+                    "bytes": 30000
+                },
+                "image": {
+                    "requests": 10,
+                    "bytes": 30000
+                }
+            }
+        }
+    }
+}

@@ -34,6 +34,12 @@ Install PSI globally::
 
   $ npm install --save psi
 
+Image Optimization
+------------------
+
+  $ npm install image-webpack-loader --save-dev
+
+
 Deployment
 ----------
 
