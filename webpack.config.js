@@ -30,7 +30,13 @@ module.exports = {
     loaders: [
       { test: /\.js$/, loader: 'babel-loader', exclude: /node_modules/ },
       { test: /\.css$/, loader: "style-loader!css-loader" },
-      { test: /\.(png|jpg)$/, loader: 'file-loader?name=[name].[ext]'},
+      {
+        test: /\.(png|jpg)$/,
+        loaders: [
+            'file-loader?name=[name].[ext]',
+            'image-webpack?bypassOnDebug&optimizationLevel=7&interlaced=false'
+        ]
+      },
       // inline base64 URLs for <=8k images, direct URLs for the rest
       //{ test: /\.(png|jpg)$/, loader: 'url-loader?limit=8192'},
       // helps to load bootstrap's css.
