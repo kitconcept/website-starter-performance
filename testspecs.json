@@ -1,12 +1,26 @@
 {
     "median": {
         "firstView": {
+            "TTFB": 500,
+            "render": 1000,
+            "loadTime": 1500,
+            "fullyLoaded": 1750,
+            "SpeedIndex": 1500,
+            "responses_404": 1,
             "breakdown": {
+                "html": {
+                    "requests": 1,
+                    "bytes": 5000
+                },
                 "js": {
                     "requests": 2,
                     "bytes": 20000
                 },
                 "css": {
+                    "requests": 1,
+                    "bytes": 30000
+                },
+                "font": {
                     "requests": 1,
                     "bytes": 30000
                 },
