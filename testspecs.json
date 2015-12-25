@@ -8,8 +8,8 @@
             "TTFB": 500,
             "render": 1000,
             "loadTime": {
-                "min": 1500,
                 "text": "page load time took {actual}ms and should be no more than {expected}ms",
+                "min": 1500
             },
             "fullyLoaded": 1750,
             "SpeedIndex": 1500,
