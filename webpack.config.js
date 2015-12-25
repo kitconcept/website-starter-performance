@@ -34,7 +34,7 @@ module.exports = {
         test: /\.(png|jpg|ico)$/,
         loaders: [
             'file-loader?name=[name].[ext]',
-            'image-webpack?bypassOnDebug&optimizationLevel=7&interlaced=false'
+            'image-webpack?progressive=true&bypassOnDebug&optimizationLevel=7&interlaced=false'
         ]
       },
       // inline base64 URLs for <=8k images, direct URLs for the rest
