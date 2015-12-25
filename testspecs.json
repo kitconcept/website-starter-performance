@@ -1,12 +1,16 @@
 {
     "median": {
         "firstView": {
+            "requests": 10,
             "TTFB": 500,
             "render": 1000,
             "loadTime": 1500,
             "fullyLoaded": 1750,
             "SpeedIndex": 1500,
             "responses_404": 1,
+            "score_gzip": {
+                "min": 100,
+            },
             "breakdown": {
                 "html": {
                     "requests": 3,
