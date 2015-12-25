@@ -1,20 +1,27 @@
 {
+    "defaults": {
+        "suiteName": "Performance Test Suite for psi.kitconcept.com"
+    },
     "median": {
         "firstView": {
             "requests": 10,
             "TTFB": 500,
             "render": 1000,
-            "loadTime": 1500,
+            "loadTime": {
+                "min": 1500,
+                "text": "page load time took {actual}ms and should be no more than {expected}ms",
+            },
             "fullyLoaded": 1750,
             "SpeedIndex": 1500,
             "responses_404": 1,
             "score_gzip": {
-                "min": 100
+                "min": 99
             },
             "score_keep-alive": {
-                "min": 100
+                "min": 99
             },
             "score_progressive_jpeg": {
+                "text": "score_progressive_jpeg is {actual} and should be {expected}",
                 "min": 1
             },
             "breakdown": {
