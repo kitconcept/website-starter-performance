@@ -10,14 +10,42 @@
   <title>Website Starter &mdash; by kitconcept</title>
 </head>
 <body style="margin: 0; padding: 0;">
+
   <!-- ABOVE THE FOLD -->
+  <style type="text/css">
+    .navigation {
+      list-style-type: none;
+      height: 60px;
+      float: right;
+    }
+    .navigation li {
+      float: left;
+    }
+    .navigation li a {
+      display: block;
+      text-align: center;
+      width: 100px;
+      height: 60px;
+      line-height: 60px;
+    }
+  </style>
   <div style="height: 100vh; color: white; background-image: url('background.jpg'); background-size: cover;">
-    <div style="width: 80%; margin: 0 auto; height: 80%; padding-top: 10%; padding-bottom: 10%;">
+    <div style="width: 80%; margin: 0 auto; height: 60px;">
+      <img src="logo.png" alt="kitconcept" style="width: 20%; float: left;" />
+      <ul class="navigation">
+        <li><a href="#">one</a></li>
+        <li><a href="#">two</a></li>
+        <li><a href="#">three</a></li>
+        <li><a href="#">four</a></li>
+      </ul>
+    </div>
+    <div style="width: 60%; margin: 0 auto; height: 60%; padding-top: 15%;">
       <h1>website starter</h1>
       <h3>This is the above-the-fold section that is loaded without the need to load any external resources.</h3>
     </div>
   </div>
   <!-- ABOVE THE FOLD END -->
+
 <!--
   <div class="navbar-wrapper">
     <div class="container">

@@ -54,7 +54,25 @@ Run WebPageTest:
 Image Optimization
 ------------------
 
+Install image-webpack-loader::
+
   $ npm install image-webpack-loader --save-dev
+
+Enable image-webpack-loader for all images ("webpack.config.js")::
+
+  module: {
+    loaders: [
+      { test: /\.js$/, loader: 'babel-loader', exclude: /node_modules/ },
+      { test: /\.css$/, loader: "style-loader!css-loader" },
+      {
+        test: /\.(png|jpg|ico)$/,
+        loaders: [
+            'file-loader?name=[name].[ext]',
+            'image-webpack?progressive=true&bypassOnDebug&optimizationLevel=7&interlaced=false'
+        ]
+      },
+    ]
+  }
 
 
 Deployment
