@@ -11,7 +11,14 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       title: 'Website Starter',
-      template: 'src/index.html'
+      template: 'src/index.html',
+      minify: {
+        collapseWhitespace: true,
+        removeComments: true,
+        removeRedundantAttributes: true,
+        removeScriptTypeAttributes: true,
+        removeStyleLinkTypeAttributes: true
+      }
     }),
     new webpack.ProvidePlugin({
       $: "jquery",
@@ -23,8 +30,15 @@ module.exports = {
     loaders: [
       { test: /\.js$/, loader: 'babel-loader', exclude: /node_modules/ },
       { test: /\.css$/, loader: "style-loader!css-loader" },
+      {
+        test: /.*\.(gif|png|jpe?g|ico|svg)$/i,
+        loaders: [
+            'file-loader?name=[name].[ext]',
+            'image-webpack?progressive=true&bypassOnDebug&optimizationLevel=7&interlaced=false'
+        ]
+      },
       // inline base64 URLs for <=8k images, direct URLs for the rest
-      { test: /\.(png|jpg)$/, loader: 'url-loader?limit=8192'},
+      //{ test: /\.(png|jpg)$/, loader: 'url-loader?limit=8192'},
       // helps to load bootstrap's css.
       { test: /\.woff(\?v=\d+\.\d+\.\d+)?$/,
         loader: 'url?limit=10000&minetype=application/font-woff' },
