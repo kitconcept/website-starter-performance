@@ -8,9 +8,15 @@
             "fullyLoaded": 1750,
             "SpeedIndex": 1500,
             "responses_404": 1,
-            "score_gzip": 100,
-            "score_keep-alive": 100,
-            "score_progressive_jpeg": 1,
+            "score_gzip": {
+                "min": 100
+            },
+            "score_keep-alive": {
+                "min": 100
+            },
+            "score_progressive_jpeg": {
+                "min": 1
+            },
             "breakdown": {
                 "html": {
                     "requests": 3,
