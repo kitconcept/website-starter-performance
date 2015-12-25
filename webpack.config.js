@@ -31,7 +31,7 @@ module.exports = {
       { test: /\.js$/, loader: 'babel-loader', exclude: /node_modules/ },
       { test: /\.css$/, loader: "style-loader!css-loader" },
       {
-        test: /\.(png|jpg|ico)$/,
+        test: /.*\.(gif|png|jpe?g|ico|svg)$/i,
         loaders: [
             'file-loader?name=[name].[ext]',
             'image-webpack?progressive=true&bypassOnDebug&optimizationLevel=7&interlaced=false'
