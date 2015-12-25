@@ -9,7 +9,7 @@
             "responses_404": 1,
             "breakdown": {
                 "html": {
-                    "requests": 1,
+                    "requests": 3,
                     "bytes": 5000
                 },
                 "js": {
