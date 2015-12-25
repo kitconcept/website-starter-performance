@@ -7,10 +7,7 @@
             "requests": 10,
             "TTFB": 500,
             "render": 1000,
-            "loadTime": {
-                "text": "page load time took {actual}ms and should be no more than {expected}ms",
-                "min": 1500
-            },
+            "loadTime": 1500,
             "fullyLoaded": 1750,
             "SpeedIndex": 1500,
             "responses_404": 1,
@@ -21,8 +18,7 @@
                 "min": 99
             },
             "score_progressive_jpeg": {
-                "text": "score_progressive_jpeg is {actual} and should be {expected}",
-                "min": 1
+                "min": 0.99
             },
             "breakdown": {
                 "html": {
@@ -31,7 +27,7 @@
                 },
                 "js": {
                     "requests": 2,
-                    "bytes": 20000
+                    "bytes": 80000
                 },
                 "css": {
                     "requests": 1,
@@ -43,7 +39,7 @@
                 },
                 "image": {
                     "requests": 10,
-                    "bytes": 30000
+                    "bytes": 300000
                 }
             }
         }
