@@ -18,7 +18,7 @@
                 "min": 99
             },
             "score_progressive_jpeg": {
-                "min": 0.99
+                "min": 99
             },
             "breakdown": {
                 "html": {
