@@ -1,3 +1,6 @@
+.. image:: https://travis-ci.org/kitconcept/website-starter-performance.svg?branch=master
+    :target: https://travis-ci.org/kitconcept/website-starter-performance
+
 Website Starter
 ===============
 
