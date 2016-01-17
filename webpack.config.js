@@ -23,13 +23,21 @@ module.exports = {
     new webpack.ProvidePlugin({
       $: "jquery",
       jQuery: "jquery",
-      "_": "underscore",
+      // "_": "underscore",
     }),
   ],
+  resolve: {
+    alias: {
+        jquery: "jquery/dist/jquery",
+        jQuery: "jquery/dist/jquery"
+    }
+  },
   module: {
     loaders: [
+      { test: require.resolve("jquery"), loader: "expose?$!expose?jQuery" },
       { test: /\.js$/, loader: 'babel-loader', exclude: /node_modules/ },
       { test: /\.css$/, loader: "style-loader!css-loader" },
+      { test: /\.scss$/, loaders: ["style", "css?sourceMap", "sass?sourceMap"]},
       {
         test: /.*\.(gif|png|jpe?g|ico|svg)$/i,
         loaders: [
