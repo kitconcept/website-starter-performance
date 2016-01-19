@@ -5,8 +5,8 @@ import './carousel.css';
 import './scss/kitconcept.scss';
 require('./img/favicon.ico');
 require('./img/logo.png');
-require('./img/background.jpg');
+require('./img/logo-with-moto.png');
 
 $(document).ready(() => {
-
+  $(".button-collapse").sideNav();
 });
