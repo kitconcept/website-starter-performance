@@ -1,3 +1,5 @@
+$kitconcept-brown: #B4AD92;
+
 @media only screen and (min-width: 993px) {
   .container {
     width: 80%;
@@ -41,6 +43,10 @@ h3 {
   font-size: 1.6rem;
 }
 
+h4 {
+  font-size: 1.2rem;
+}
+
 nav li a {
   color: #004876;
   /*display: block;
@@ -54,6 +60,15 @@ nav i { color: #004876; }
 
 .text-light {
   font-weight: 200
+}
+.underlined {
+  text-decoration: underline;
+  // border-bottom: 1px solid $kitconcept-brown;
+}
+
+.centered-box {
+  width: 80%;
+  margin: 30px auto;
 }
 
 .atf {
@@ -71,6 +86,10 @@ nav i { color: #004876; }
 
 .leistung {
   margin-bottom: 150px;
+}
+
+.warum-plone {
+  padding-top: 100px;
 }
 
 .kcbrown {
