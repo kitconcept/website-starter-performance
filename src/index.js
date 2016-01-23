@@ -1,6 +1,8 @@
 import $ from 'jquery';
 import 'materialize-css/dist/css/materialize.css';
 import 'materialize-css/dist/js/materialize.js';
+import Swiper from 'swiper/dist/js/swiper.jquery.umd.js';
+import 'swiper/dist/css/swiper.css';
 import './carousel.css';
 import './scss/kitconcept.scss';
 require('./img/favicon.ico');
@@ -15,6 +17,20 @@ require('./img/logo-consulting.png');
 
 $(document).ready(() => {
   $(".button-collapse").sideNav();
+
+  // Swiper init
+  let mySwiper = new Swiper ('.swiper-container', {
+    // Optional parameters
+    loop: true,
+
+    // If we need pagination
+    pagination: '.swiper-pagination',
+    paginationClickable: true,
+
+    // Navigation arrows
+    nextButton: '.swiper-button-next',
+    prevButton: '.swiper-button-prev',
+  })
 
   // smooth scrolling to any internal tags
   $('a[href*=#]:not([href=#])').click(function() {
