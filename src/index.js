@@ -26,7 +26,10 @@ $(document).ready(() => {
     // If we need pagination
     pagination: '.swiper-pagination',
     paginationClickable: true,
-
+    paginationBulletRender: function (index, className) {
+      const SLIDES_TITLE = ['Leistungsfähig', 'Erfolgreich', 'International', 'Sicher', 'Benutzerfreundlich', 'Skalierbar', 'Flexibel', 'Suchmaschinenfreundlich', 'Unabhängig', 'Kostenlos']
+      return '<span class="' + className + '">' + SLIDES_TITLE[index] + '</span>';
+    },
     // Navigation arrows
     nextButton: '.swiper-button-next',
     prevButton: '.swiper-button-prev',
