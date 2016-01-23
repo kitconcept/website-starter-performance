@@ -40,7 +40,6 @@ h2 {
 }
 
 h3 {
-  color: #004876;
   font-size: 1.6rem;
 }
 
@@ -91,6 +90,34 @@ nav i { color: #004876; }
 
 .warum-plone {
   padding-top: 50px;
+}
+
+.kunden {
+  // background-color: #EFF4F6;
+  padding-top: 100px;
+
+  h3 {
+    margin: 0;
+    color: white;
+  }
+
+  .header {
+    margin-bottom: 25px;
+  }
+
+  .list {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+}
+
+.kunde {
+  height: 100px;
+  &-name {
+    text-transform: uppercase;
+    color: white;
+    font-weight: 200;
+  }
 }
 
 .kcbrown {
@@ -165,3 +192,13 @@ nav i { color: #004876; }
 
 .swiper-pagination-bullet-active { background: inherit; }
 .swiper-pagination-bullet { height: inherit; width: inherit; background: inherit; display: inline; }
+
+// Kunden gradient
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#063763+0,316186+24,207cca+41,063763+100 */
+.kunden {
+  background: #063763; /* Old browsers */
+  background: -moz-linear-gradient(-45deg, #063763 0%, #316186 24%, #207cca 41%, #063763 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(-45deg, #063763 0%,#316186 24%,#207cca 41%,#063763 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(135deg, #063763 0%,#316186 24%,#207cca 41%,#063763 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#063763', endColorstr='#063763',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
