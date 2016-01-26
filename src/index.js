@@ -14,6 +14,7 @@ require('./img/service-link.png');
 require('./img/logo-intranet.png');
 require('./img/logo-mobile.png');
 require('./img/logo-consulting.png');
+require('./img/logo-white.png');
 
 $(document).ready(() => {
   $(".button-collapse").sideNav();

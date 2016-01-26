@@ -49,15 +49,15 @@ module.exports = {
       //{ test: /\.(png|jpg)$/, loader: 'url-loader?limit=8192'},
       // helps to load bootstrap's css.
       { test: /\.woff(\?v=\d+\.\d+\.\d+)?$/,
-        loader: 'url?limit=10000&minetype=application/font-woff' },
+        loader: 'url?limit=10000&mimetype=application/font-woff' },
       { test: /\.woff2$/,
-        loader: 'url?limit=10000&minetype=application/font-woff' },
+        loader: 'url?limit=10000&mimetype=application/font-woff' },
       { test: /\.ttf(\?v=\d+\.\d+\.\d+)?$/,
-        loader: 'url?limit=10000&minetype=application/octet-stream' },
+        loader: 'url?limit=10000&mimetype=application/octet-stream' },
       { test: /\.eot(\?v=\d+\.\d+\.\d+)?$/,
         loader: 'file' },
       { test: /\.svg(\?v=\d+\.\d+\.\d+)?$/,
-        loader: 'url?limit=10000&minetype=image/svg+xml' }
+        loader: 'url?limit=10000&mimetype=image/svg+xml' }
     ]
   },
   devtool: 'source-map'

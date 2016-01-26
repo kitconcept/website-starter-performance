@@ -93,7 +93,6 @@ nav i { color: #004876; }
 }
 
 .kunden {
-  // background-color: #EFF4F6;
   padding-top: 100px;
 
   h3 {
@@ -117,6 +116,42 @@ nav i { color: #004876; }
     text-transform: uppercase;
     color: white;
     font-weight: 200;
+  }
+}
+
+.profil {
+  padding-top: 100px;
+  background-color: #EFF4F6;
+}
+
+.kontakt {
+  padding-top: 100px;
+  background-color: #28597E;
+
+  h3 {
+    margin: 0;
+    color: white;
+  }
+
+  .header {
+    margin-bottom: 50px;
+  }
+
+  .address {
+    color: white;
+    p { width: 175px; margin-left: 55px; }
+  }
+
+  button {
+    color: white;
+  }
+
+  footer {
+    padding-bottom: 50px;
+    a { color: white; font-size: 1.2rem; }
+    .copyright { float: left; }
+    .links { float: right;
+    }
   }
 }
 
