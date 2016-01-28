@@ -44,57 +44,66 @@
     }*/
 
   </style>
+  <!-- <div id="navigation" class="navbar-fixed">
+    <nav class="white" role="navigation">
+      <div class="nav-wrapper container">
+        <a id="logo-container" href="#navigation" class="brand-logo">
+          <img src="images/logo-200px.png" alt="kitconcept - driven by quality, powered by passion" />
+        </a>
+        <ul class="right hide-on-med-and-down">
+          <li><a href="#services">Leistungen</a></li>
+          <li><a href="#about">Über uns</a></li>
+          <li><a href="#contact">Kontakt</a></li>
+          <li><a href="#footer">Impressum</a></li>
+        </ul>
+        <ul id="nav-mobile" class="side-nav">
+          <li><a href="#services">Leistungen</a></li>
+          <li><a href="#about">Über uns</a></li>
+          <li><a href="#contact">Kontakt</a></li>
+          <li><a href="#footer">Impressum</a></li>
+        </ul>
+        <a href="#" data-activates="nav-mobile" class="button-collapse">
+          <i class="material-icons">menu</i>
+        </a>
+      </div>
+    </nav>
+  </div> -->
   <div style="height: 100vh;">
-    <div class="nav-container">
-      <nav style="color: #004876; box-shadow: none; background-color: white;">
-        <div class="nav-wrapper">
-          <!-- <a href="#" class="brand-logo">Logo</a> -->
-          <img class="brand-logo" src="logo.png" alt="kitconcept" style="width: 200px" />
-          <a href="#" data-activates="mobile-demo" class="button-collapse">
+
+    <div id="navigation" class="white navbar-fixed">
+      <nav>
+        <div class="nav-wrapper nav-container">
+          <a id="logo-container" href="#navigation">
+            <img class="brand-logo" src="logo.png" alt="kitconcept - driven by quality, powered by passion" />
+          </a>
+          <a href="#" data-activates="nav-mobile" class="button-collapse">
             <i class="material-icons mdi-navigation-menu"></i></a>
-          <ul id="nav-mobile" class="right hide-on-med-and-down">
-            <li><a href="#">Leistungen</a></li>
-            <li><a href="#">Kunden</a></li>
-            <li><a href="#">Profil</a></li>
-            <li><a href="#">Kontact</a></li>
+          <ul class="default-nav right hide-on-med-and-down">
+            <li class="active"><a href="#leistungen">Leistungen</a></li>
+            <li><a href="#kunden">Kunden</a></li>
+            <li><a href="#profil">Profil</a></li>
+            <li><a href="#kontakt">Kontact</a></li>
           </ul>
-          <ul class="side-nav" id="mobile-demo">
-            <li><a href="#">Leistungen</a></li>
-            <li><a href="#">Kunden</a></li>
-            <li><a href="#">Profil</a></li>
-            <li><a href="#">Kontact</a></li>
+          <ul class="side-nav" id="nav-mobile">
+            <li><a href="#leistungen">Leistungen</a></li>
+            <li><a href="#kunden">Kunden</a></li>
+            <li><a href="#profil">Profil</a></li>
+            <li><a href="#kontakt">Kontact</a></li>
           </ul>
         </div>
       </nav>
     </div>
-    <!-- <div style="width: 80%; margin: 0 auto; height: 60px;">
-      <img src="logo.png" alt="kitconcept" style="width: 20%; float: left;" />
-      <ul class="navigation">
-        <li><a href="#">Leistungen</a></li>
-        <li><a href="#">Kunden</a></li>
-        <li><a href="#">Profil</a></li>
-        <li><a href="#">Kontact</a></li>
-      </ul>
-    </div> -->
+
     <div class="container atf">
       <div class="row">
-        <div class="col m7 push-5">
+        <div class="col s7 push-5">
           <h1 class="kcbrown"><span class="text-light">Die experten für</span> Professionelle web-lösungen</h1>
           <h3 class="kcblue">kitconcept unterstützt Unternehmen, öffentliche Einrichtungen und andere Organisationen bei der technischen Umsetzung von Webseiten, Portalen, Intranets oder mobilen Anwendungen auf Basis von leistungsstarken Open-Source-Lösungen.</h3>
         </div>
-        <div class="col m5 pull-7">
+        <div class="col s5 pull-7">
           <img src="logo-with-moto.png" style="width: 100%" alt="Big Kitconcept logo with moto" />
         </div>
       </div>
-      <!-- <div style="margin-top: 120px">
-        <div style="float: left; width: 50%;">
-          <h1 style="color: #B4AD92; font-size: 3.5rem; font-weight: 500; text-transform: Uppercase; margin: 0"><span style="font-weight: 200">Die experten für</span> Professionelle web-lösungen</h1>
-          <h4 style="color: #004876; font-size: 1.6rem;">kitconcept unterstützt Unternehmen, öffentliche Einrichtungen und andere Organisationen bei der technischen Umsetzung von Webseiten, Portalen, Intranets oder mobilen Anwendungen auf Basis von leistungsstarken Open-Source-Lösungen.</h4>
-        </div>
-
-        <img src="logo-with-moto.png" alt="Big Kitconcept logo with moto" style="width: 39%; float: right;"/>
-
-      </div> -->
 
     </div>
     <div class="container arrow">
@@ -108,22 +117,33 @@
   <div class="leistungen">
     <div id="leistungen" class="container">
       <div class="row leistung">
-        <div class="col m5">
+        <div class="col s5">
           <h1 class="kcbrown"><span class="text-light">/01</span><br/>Leistungen</h1>
         </div>
-        <div class="col m7">
+        <div class="col s7">
           <h3 class="kcblue">Auf der Grundlage einer umfassenden Analyse Ihrer Anforderungen beraten wir Sie bei der Auswahl, Gestaltung und Anpassung von passenden und performanten CMS-Lösungen für Ihre Online-Projekte.
   Da die Leistungsfähigkeit eines Content- Management- Systems entscheidend für
-  Erfolg und Wartbarkeit ist, konzipieren und realisieren wir Web-Projekte auf der Basis von professionellen Open-Source-Technologien wie Plone.
+  Erfolg und Wartbarkeit ist, konzipieren und realisieren wir Web-Projekte auf der Basis von professionellen Open-Source-Technologien wie Plone.<br /><br />
   Ein hoher Anspruch an Softwarequalität und Benutzerfreundlichkeit ist dabei unser Antrieb. Zuverlässige und langlebige Lösungen auf dem neusten Stand der Technik sind unser Ziel.</h3>
         </div>
       </div>
 
-      <div class="row leistung">
-        <div class="col m5">
-          <img src="logo-portals.png" alt="Portale & webseiten" />
+      <div id="portals" class="row leistung scrollspy">
+        <div class="col s5">
+          <div class="sticky-portals-logo">
+              <img src="logo-portals.png" alt="Portale & webseiten" />
+              <div class="leistungen-list">
+                <ul class="section table-of-contents">
+                  <li><a href="#portals">Portale & Webseiten</a></li>
+                  <li><a href="#intranet">Intranet/Extranet</a></li>
+                  <li><a href="#mobile">Mobile Anwendungen</a></li>
+                  <li><a href="#consulting">Beratung</a></li>
+                </ul>
+              </div>
+          </div>
         </div>
-        <div class="col m7">
+        <div class="col s7">
+          <h5 class="kcbrown"><span class="text-light">/01</span> LEISTUNGEN</h5>
           <h2 class="kcblue">Portale & webseiten</h2>
           <h3 class="kcblue">Wir unterstützen Sie bei der Planung und Umsetzung von Portalen und Webseiten – mit allen relevanten Features für den professionellen Einsatz.</h3>
           <div>
@@ -132,24 +152,30 @@
         </div>
       </div>
 
-      <div class="row leistung">
-        <div class="col m7">
+      <div id="intranet" class="row leistung scrollspy">
+        <div class="col s5">
+          <div class="sticky-intranet-logo">
+            <img src="logo-intranet.png" alt="Intranet/Extranet" />
+          </div>
+        </div>
+        <div class="col s7">
+          <h5 class="kcbrown"><span class="text-light">/01</span> LEISTUNGEN</h5>
           <h2 class="kcblue">intranet/extranet</h2>
           <h3 class="kcblue">Um die webbasierte externe und interne Kommunikation in Ihrem Unternehmen oder Ihrer Organisationen so einfach und sicher wie möglich zu gestalten, berücksichtigen wir von Anfang an alle wesentlichen Aspekte.</h3>
           <div>
             <a href="#"><img src="service-link.png" /></a>
           </div>
         </div>
-        <div class="col m5">
-          <img src="logo-intranet.png" alt="Intranet/Extranet" />
-        </div>
       </div>
 
-      <div class="row leistung">
-        <div class="col m5">
-          <img src="logo-mobile.png" alt="Mobile anwendungen" />
+      <div id="mobile" class="row leistung scrollspy">
+        <div class="col s5">
+          <div class="sticky-mobile-logo">
+            <img src="logo-mobile.png" alt="Mobile anwendungen" />
+          </div>
         </div>
-        <div class="col m7">
+        <div class="col s7">
+          <h5 class="kcbrown"><span class="text-light">/01</span> LEISTUNGEN</h5>
           <h2 class="kcblue">MobiLe<br/>anwendungen</h2>
           <h3 class="kcblue">Unternehmensprozesse und -daten jederzeit und standortunabhängig verfügbar und bedienbar
 zu machen, erfordert hoch individuelle Lösungen und ein hohes Maß an spezifischen Anpassungen.
@@ -160,16 +186,19 @@ Wir erarbeiten maßgeschneiderte mobile Applikationen und Anwendungen für Sie 
         </div>
       </div>
 
-      <div class="row leistung">
-        <div class="col m7">
+      <div id="consulting" class="row leistung scrollspy">
+        <div class="col s5">
+          <div class="sticky-consulting-logo">
+            <img src="logo-consulting.png" alt="Beratung" />
+          </div>
+        </div>
+        <div class="col s7">
+          <h5 class="kcbrown"><span class="text-light">/01</span> LEISTUNGEN</h5>
           <h2 class="kcblue">Beratung</h2>
           <h3 class="kcblue">Unsere langjährige Expertise in der Entwicklung hochwertiger Software stellen wir Ihnen gerne auch im Rahmen einer fundierten Beratung u. a. zu folgenden Themen zur Verfügung.</h3>
           <div>
             <a href="#"><img src="service-link.png" /></a>
           </div>
-        </div>
-        <div class="col m5">
-          <img src="logo-consulting.png" alt="Beratung" />
         </div>
       </div>
       <div class="clearfix"></div>
@@ -256,10 +285,10 @@ Wir erarbeiten maßgeschneiderte mobile Applikationen und Anwendungen für Sie 
   <div class="kunden">
     <div id="kunden" class="container">
       <div class="row header">
-        <div class="col m5">
+        <div class="col s5">
           <h1 class="kcbrown"><span class="text-light">/02</span><br/>Kunden</h1>
         </div>
-        <div class="col m7">
+        <div class="col s7">
           <h3>Zu unseren Kunden gehören mittelständische Unternehmen, Universitäten und
 Institute, Wissenschafts-Organisationen, Bildungseinrichtungen, Behörden, Kliniken, gemeinnützige Organisationen, Medien und Verlage.
 Bei einem so breiten Spektrum gleicht kein Kunde dem anderen. Eins haben unsere Kunden jedoch alle gemeinsam: komplexe und anspruchsvolle Anforderungen bei der Umsetzung ihrer Projekte.</h3>
@@ -358,7 +387,7 @@ Bei einem so breiten Spektrum gleicht kein Kunde dem anderen. Eins haben unsere 
   <div class="profil">
     <div id="profil" class="container">
       <div class="row header">
-        <div class="col m5">
+        <div class="col s5">
           <h1 class="kcbrown"><span class="text-light">/03</span><br/>Profil</h1>
         </div>
       </div>

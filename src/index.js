@@ -19,6 +19,13 @@ require('./img/logo-white.png');
 $(document).ready(() => {
   $(".button-collapse").sideNav();
 
+  $('.leistung .sticky-portals-logo').pushpin({  top: $('.leistung .sticky-portals-logo').offset().top, offset: 200 });
+  $('.leistung .sticky-intranet-logo').pushpin({  top: $('.leistung .sticky-intranet-logo').offset().top, offset: 200 });
+  $('.leistung .sticky-mobile-logo').pushpin({  top: $('.leistung .sticky-mobile-logo').offset().top, offset: 200 });
+  $('.leistung .sticky-consulting-logo').pushpin({  top: $('.leistung .sticky-consulting-logo').offset().top, offset: 200, bottom: $('.leistung .sticky-consulting-logo').offset().top + 100 });
+
+  $('.scrollspy').scrollSpy();
+
   // Swiper init
   let mySwiper = new Swiper ('.swiper-container', {
     // Optional parameters
@@ -45,6 +52,10 @@ $(document).ready(() => {
         $('html,body').animate({
           scrollTop: target.offset().top - 80
         }, 500);
+
+        // Change class of the element
+        $(this).parents("li").addClass("active").siblings().removeClass("active");
+
         return false;
       }
     }

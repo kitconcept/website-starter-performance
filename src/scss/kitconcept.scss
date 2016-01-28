@@ -1,3 +1,4 @@
+$kitconcept-blue: #063763;
 $kitconcept-brown: #B4AD92;
 $kitconcept-light-brown: #F7F6F4;
 
@@ -47,6 +48,14 @@ h4 {
   font-size: 1.2rem;
 }
 
+.brand-logo { width: 200px; margin-top: 5px; }
+
+nav {
+  color: #004876;
+  box-shadow: none;
+  background-color: white;
+}
+
 nav li a {
   color: #004876;
   /*display: block;
@@ -57,6 +66,54 @@ nav li a {
 }
 
 nav i { color: #004876; }
+
+nav .default-nav li {
+  min-width: 90px;
+  text-align: center;
+}
+
+nav .default-nav li a {
+  // padding: 0px;
+}
+
+nav .default-nav li.active,
+nav .default-nav li.active a {
+  background-color: transparent;
+  &:hover {
+    background-color: transparent;
+  }
+}
+
+nav .default-nav li a {
+  border-top: 5px solid white;
+  &:hover {
+    border-top: 5px solid $kitconcept-blue;
+    transition: border-color .5s ease-in-out;
+    -webkit-transition: border-color .5s ease-in-out;
+  }
+}
+nav .default-nav li.active a {
+  border-top: 5px solid $kitconcept-blue;
+}
+
+nav ul a {
+  transition: none;
+  &:hover {
+    background-color: transparent;
+  }
+}
+
+// nav li a:after {
+//   content: "";
+//   height: 100%;
+//   left: 0;
+//   top: 0;
+//   width: 0px;
+//   position: absolute;
+//   transition: all 0.3s ease 0s;
+//   -webkit-transition: all 0.3s ease 0s;
+//   z-index: -1;
+// }
 
 .text-light {
   font-weight: 200
@@ -86,6 +143,24 @@ nav i { color: #004876; }
 
 .leistung {
   margin-bottom: 150px;
+
+  // hack for having empty columns on the left that do not wrap
+  .s5 { min-height: 1px; }
+  .sticky-intranet-logo,
+  .sticky-mobile-logo,
+  .sticky-consulting-logo {
+    opacity: 0;
+    transition: opacity .5s ease-in-out;
+    &.pinned { opacity: 1 }
+   }
+   .leistungen-list {
+     margin-left: 40px;
+   }
+  .table-of-contents a {
+    color: $kitconcept-blue;
+    opacity: .5;
+    &.active { border: none; opacity: 1; }
+  }
 }
 
 .warum-plone {
@@ -160,7 +235,7 @@ nav i { color: #004876; }
 }
 
 .kcblue {
-    color: #063763;
+    color: $kitconcept-blue;
 }
 
 .arrow {
