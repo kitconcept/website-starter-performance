@@ -142,16 +142,19 @@ nav ul a {
 }
 
 .leistung {
-  margin-bottom: 150px;
+  // margin-bottom: 150px;
 
   // hack for having empty columns on the left that do not wrap
-  .s5 { min-height: 1px; }
+  .s5 { min-height: 500px; }
   .sticky-intranet-logo,
   .sticky-mobile-logo,
   .sticky-consulting-logo {
     opacity: 0;
     transition: opacity .5s ease-in-out;
     &.pinned { opacity: 1 }
+   }
+   .sticky-consulting-logo {
+     &.pin-bottom { opacity: 1 }
    }
    .leistungen-list {
      margin-left: 40px;

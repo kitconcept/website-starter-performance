@@ -3,6 +3,7 @@ import 'materialize-css/dist/css/materialize.css';
 import 'materialize-css/dist/js/materialize.js';
 import Swiper from 'swiper/dist/js/swiper.jquery.umd.js';
 import 'swiper/dist/css/swiper.css';
+// import './js/kcpin.js';
 import './carousel.css';
 import './scss/kitconcept.scss';
 require('./img/favicon.ico');
@@ -19,10 +20,10 @@ require('./img/logo-white.png');
 $(document).ready(() => {
   $(".button-collapse").sideNav();
 
-  $('.leistung .sticky-portals-logo').pushpin({  top: $('.leistung .sticky-portals-logo').offset().top, offset: 200 });
-  $('.leistung .sticky-intranet-logo').pushpin({  top: $('.leistung .sticky-intranet-logo').offset().top, offset: 200 });
-  $('.leistung .sticky-mobile-logo').pushpin({  top: $('.leistung .sticky-mobile-logo').offset().top, offset: 200 });
-  $('.leistung .sticky-consulting-logo').pushpin({  top: $('.leistung .sticky-consulting-logo').offset().top, offset: 200, bottom: $('.leistung .sticky-consulting-logo').offset().top + 100 });
+  $('.leistung .sticky-portals-logo').pushpin({  top: $('.leistung .sticky-portals-logo').offset().top, offset: 300, bottom: $('.leistung .sticky-consulting-logo').offset().top });
+  $('.leistung .sticky-intranet-logo').pushpin({  top: $('.leistung .sticky-intranet-logo').offset().top, offset: 300, bottom: $('.leistung .sticky-consulting-logo').offset().top });
+  $('.leistung .sticky-mobile-logo').pushpin({  top: $('.leistung .sticky-mobile-logo').offset().top, offset: 300, bottom: $('.leistung .sticky-consulting-logo').offset().top });
+  $('.leistung .sticky-consulting-logo').pushpin({  top: $('.leistung .sticky-consulting-logo').offset().top, offset: 300, bottom: $('.leistung .sticky-consulting-logo').offset().top + 1 });
 
   $('.scrollspy').scrollSpy();
 
