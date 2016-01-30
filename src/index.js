@@ -20,10 +20,10 @@ require('./img/logo-white.png');
 $(document).ready(() => {
   $(".button-collapse").sideNav();
 
-  $('.leistung .sticky-portals-logo').pushpin({  top: $('.leistung .sticky-portals-logo').offset().top, offset: 300, bottom: $('.leistung .sticky-consulting-logo').offset().top });
-  $('.leistung .sticky-intranet-logo').pushpin({  top: $('.leistung .sticky-intranet-logo').offset().top, offset: 300, bottom: $('.leistung .sticky-consulting-logo').offset().top });
-  $('.leistung .sticky-mobile-logo').pushpin({  top: $('.leistung .sticky-mobile-logo').offset().top, offset: 300, bottom: $('.leistung .sticky-consulting-logo').offset().top });
-  $('.leistung .sticky-consulting-logo').pushpin({  top: $('.leistung .sticky-consulting-logo').offset().top, offset: 300, bottom: $('.leistung .sticky-consulting-logo').offset().top + 1 });
+  $('.leistung .sticky-portals-logo').pushpin({  top: $('.leistung .sticky-portals-logo').offset().top, offset: $(window).height() / 2 - 231/2, bottom: $('.leistung .sticky-consulting-logo').offset().top });
+  $('.leistung .sticky-intranet-logo').pushpin({  top: $('.leistung .sticky-intranet-logo').offset().top, offset: $(window).height() / 2 - 231/2, bottom: $('.leistung .sticky-consulting-logo').offset().top });
+  $('.leistung .sticky-mobile-logo').pushpin({  top: $('.leistung .sticky-mobile-logo').offset().top, offset: $(window).height() / 2 - 231/2, bottom: $('.leistung .sticky-consulting-logo').offset().top });
+  $('.leistung .sticky-consulting-logo').pushpin({  top: $('.leistung .sticky-consulting-logo').offset().top, offset: $(window).height() / 2 - 231/2, bottom: $('.leistung .sticky-consulting-logo').offset().top + 1 });
 
   $('.scrollspy').scrollSpy();
 

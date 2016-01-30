@@ -1,6 +1,8 @@
 $kitconcept-blue: #063763;
 $kitconcept-brown: #B4AD92;
 $kitconcept-light-brown: #F7F6F4;
+$kitconcept-grey-bg: #C1D1DD;
+$kitconcept-light-grey-bg: #EFF4F6;
 
 @media only screen and (min-width: 993px) {
   .container {
@@ -29,14 +31,14 @@ $kitconcept-light-brown: #F7F6F4;
 h1 {
   font-size: 3.5rem;
   font-weight: 500;
-  text-transform: Uppercase;
+  text-transform: uppercase;
   margin: 0;
 }
 
 h2 {
   font-size: 2.8rem;
   font-weight: 700;
-  text-transform: Uppercase;
+  text-transform: uppercase;
   margin: 0;
 }
 
@@ -137,15 +139,15 @@ nav ul a {
 }
 
 .leistungen {
-  background-color: #EFF4F6;
+  background-color: $kitconcept-light-grey-bg;
   padding-top: 100px;
 }
 
 .leistung {
-  // margin-bottom: 150px;
+  margin-bottom: 150px;
 
   // hack for having empty columns on the left that do not wrap
-  .s5 { min-height: 500px; }
+  .s5 { min-height: 400px; }
   .sticky-intranet-logo,
   .sticky-mobile-logo,
   .sticky-consulting-logo {
@@ -199,7 +201,27 @@ nav ul a {
 
 .profil {
   padding-top: 100px;
-  background-color: #EFF4F6;
+  background-color: $kitconcept-light-grey-bg;
+
+  .values {
+    background-color: white;
+    .col { padding-right: 3rem; }
+  }
+
+  .header {
+    margin-bottom: 100px;
+  }
+  .title {
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin: 0;
+  }
+  p { font-size: 1.2rem; }
+
+  .team {
+    background-color: #F5F8F5;
+  }
 }
 
 .kontakt {
@@ -220,8 +242,42 @@ nav ul a {
     p { width: 175px; margin-left: 55px; }
   }
 
+  form .row { margin-bottom: 0px; }
+  input, textarea {
+    font-size: 1.5rem;
+    color: $kitconcept-blue;
+    border: none;
+    border-bottom: 1px solid white;
+    background-color: transparentize($kitconcept-grey-bg, .8);
+    padding-left: 10px;
+
+    // If required more browser support: jquery-placeholder
+    &::-webkit-input-placeholder { /* WebKit browsers */
+        color:    #6D92AC;
+    }
+    &:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+        color:    #6D92AC;
+    }
+    &::-moz-placeholder { /* Mozilla Firefox 19+ */
+        color:    #6D92AC;
+    }
+    &:-ms-input-placeholder { /* Internet Explorer 10+ */
+        color:    #6D92AC;
+    }
+  }
+
+  textarea {
+    padding-top: 0.2rem;
+    min-height: 100px;
+  }
+
   button {
     color: white;
+    text-transform: lowercase;
+    border: 1px solid white;
+    border-radius: 0;
+    background-color: transparentize($kitconcept-grey-bg, .8);
+
   }
 
   footer {
