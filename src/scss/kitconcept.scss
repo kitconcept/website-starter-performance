@@ -4,6 +4,11 @@ $kitconcept-light-brown: #F7F6F4;
 $kitconcept-grey-bg: #C1D1DD;
 $kitconcept-light-grey-bg: #EFF4F6;
 
+body {
+  font-family: "Gotham SSm A", "Gotham SSm B";
+  font-style: normal;
+}
+
 @media only screen and (min-width: 993px) {
   .container {
     width: 80%;
