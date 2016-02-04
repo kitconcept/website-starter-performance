@@ -44,10 +44,12 @@
   "dependencies": {
     "bootstrap": "^3.3.5",
     "express": "^4.13.3",
+    "extract-text-webpack-plugin": "^1.0.1",
     "jquery": "^2.1.4",
     "jquery-placeholder": "^2.3.1",
     "materialize-css": "^0.97.5",
     "psi": "^2.0.2",
+    "purifycss-webpack-plugin": "^2.0.1",
     "swiper": "^3.3.0"
   }
 }

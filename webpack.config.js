@@ -1,6 +1,7 @@
 var path = require('path');
 var webpack = require('webpack');
-var HtmlWebpackPlugin = require('html-webpack-plugin')
+var HtmlWebpackPlugin = require('html-webpack-plugin');
+var ExtractTextPlugin = require("extract-text-webpack-plugin");
 
 module.exports = {
   entry: './src/index.js',
@@ -25,6 +26,7 @@ module.exports = {
       jQuery: "jquery",
       // "_": "underscore",
     }),
+    new ExtractTextPlugin("main.css")
   ],
   resolve: {
     alias: {
@@ -36,7 +38,7 @@ module.exports = {
     loaders: [
       { test: require.resolve("jquery"), loader: "expose?$!expose?jQuery" },
       { test: /\.js$/, loader: 'babel-loader', exclude: /node_modules/ },
-      { test: /\.css$/, loader: "style-loader!css-loader" },
+      { test: /\.css$/, loader: ExtractTextPlugin.extract("style-loader", "css-loader?sourceMap") },
       { test: /\.scss$/, loaders: ["style", "css?sourceMap", "sass?sourceMap"]},
       {
         test: /.*\.(gif|png|jpe?g|ico|svg)$/i,

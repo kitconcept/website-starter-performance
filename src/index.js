@@ -4,7 +4,7 @@ import 'materialize-css/dist/js/materialize.js';
 import Swiper from 'swiper/dist/js/swiper.jquery.umd.js';
 import 'swiper/dist/css/swiper.css';
 // import './js/kcpin.js';
-import './carousel.css';
+// import './carousel.css';
 import './scss/kitconcept.scss';
 require('./img/favicon.ico');
 require('./img/logo.png');
