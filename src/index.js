@@ -25,6 +25,16 @@ $(document).ready(() => {
   $('.leistung .sticky-mobile-logo').pushpin({  top: $('.leistung .sticky-mobile-logo').offset().top, offset: $(window).height() / 2 - 231/2, bottom: $('.leistung .sticky-consulting-logo').offset().top });
   $('.leistung .sticky-consulting-logo').pushpin({  top: $('.leistung .sticky-consulting-logo').offset().top, offset: $(window).height() / 2 - 231/2, bottom: $('.leistung .sticky-consulting-logo').offset().top + 1 });
 
+  $(document).on("scroll",function(){
+      if($(document).scrollTop()>55){
+          $(".nav").addClass("nav-visible");
+          $(".atf-nav").addClass("hide");
+      } else{
+          $(".atf-nav").removeClass("hide");
+          $(".nav").removeClass("nav-visible");
+      }
+  });
+
   $('.scrollspy').scrollSpy();
 
   // Swiper init

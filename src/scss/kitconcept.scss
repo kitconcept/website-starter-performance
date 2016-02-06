@@ -4,6 +4,28 @@ $kitconcept-light-brown: #F7F6F4;
 $kitconcept-grey-bg: #C1D1DD;
 $kitconcept-light-grey-bg: #EFF4F6;
 
+// Media Query Ranges
+$small-screen-up: 601px !default;
+$medium-screen-up: 993px !default;
+$large-screen-up: 1201px !default;
+$small-screen: 600px !default;
+$medium-screen: 992px !default;
+$large-screen: 1200px !default;
+
+$medium-and-up: "only screen and (min-width : #{$small-screen-up})" !default;
+$large-and-up: "only screen and (min-width : #{$medium-screen-up})" !default;
+$small-and-down: "only screen and (max-width : #{$small-screen})" !default;
+$medium-and-down: "only screen and (max-width : #{$medium-screen})" !default;
+$medium-only: "only screen and (min-width : #{$small-screen-up}) and (max-width : #{$medium-screen})" !default;
+
+@mixin transition($args...) {
+  -webkit-transition: $args;
+  -moz-transition: $args;
+  -ms-transition: $args;
+  -o-transition: $args;
+  transition: $args;
+}
+
 body {
   font-family: "Gotham SSm A", "Gotham SSm B";
   font-style: normal;
@@ -34,7 +56,7 @@ body {
 }
 
 h1 {
-  font-size: 3.5rem;
+  font-size: 3.2rem;
   font-weight: 500;
   text-transform: uppercase;
   margin: 0;
@@ -48,7 +70,7 @@ h2 {
 }
 
 h3 {
-  font-size: 1.6rem;
+  font-size: 1.3rem;
 }
 
 h4 {
@@ -57,6 +79,24 @@ h4 {
 
 .brand-logo { width: 200px; margin-top: 5px; }
 
+.atf {
+  background-color: #043157;
+}
+// The above the fold navigation - Simple and non-mobile
+.atf-nav {
+  ul { list-style-type: none; }
+  li {
+    display: inline-block;
+    min-width: 90px;
+    text-align: center;
+    padding: 0 15px;
+    a {
+      color: white;
+    }
+  }
+}
+
+// reset MaterializeCSS nav styles
 nav {
   color: #004876;
   box-shadow: none;
@@ -109,19 +149,16 @@ nav ul a {
     background-color: transparent;
   }
 }
-
-// nav li a:after {
-//   content: "";
-//   height: 100%;
-//   left: 0;
-//   top: 0;
-//   width: 0px;
-//   position: absolute;
-//   transition: all 0.3s ease 0s;
-//   -webkit-transition: all 0.3s ease 0s;
-//   z-index: -1;
-// }
-
+@media #{$large-and-up} {
+    // styles for medium screens and larger
+  .nav {
+    display: none;
+    &-visible {
+      display: block;
+      @include transition(max-height 0.15s ease-out);
+     }
+  }
+}
 .text-light {
   font-weight: 200
 }
@@ -135,12 +172,13 @@ nav ul a {
   margin: 30px auto;
 }
 
-.atf {
+.atf-block {
   bottom: 0;
   left: 5%;
   position: absolute;
   right: 0;
   top: 30%;
+  h3 { color: white; font-weight: 200; }
 }
 
 .leistungen {
