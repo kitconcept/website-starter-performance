@@ -27,11 +27,11 @@ $(document).ready(() => {
 
   $(document).on("scroll",function(){
       if($(document).scrollTop()>55){
-          $(".nav").addClass("nav-visible");
+          $(".desktop-nav").addClass("desktop-nav-visible");
           $(".atf-nav").addClass("hide");
       } else{
           $(".atf-nav").removeClass("hide");
-          $(".nav").removeClass("nav-visible");
+          $(".desktop-nav").removeClass("desktop-nav-visible");
       }
   });
 
