@@ -4,11 +4,15 @@
   "description": "",
   "main": "src/index.js",
   "scripts": {
+    "clean:dist": "rimraf dist",
     "dev": "webpack-dev-server --inline --port 3000 --content-base dist/",
+    "prebuild": "npm run clean:dist",
+    "build:prod": "webpack -p --config webpack-prod.config.js --progress --profile --colors --display-error-details --display-cached",
     "build": "webpack -p",
     "lint": "eslint src/ ; true",
     "postinstall": "webpack --config ./webpack-prod.config.js --progress --colors",
     "start": "node server.js",
+    "server:prod": "http-server dist --cors",
     "deploy": "ssh kitconcept@kitconcept.com 'cd /srv/psi.kitconcept.com; git checkout -f master; git pull; npm install; npm run build'",
     "psi": "psi psi.kitconcept.com --threshold 99 ; true",
     "webpagetest": "webpagetest test http://psi.kitconcept.com  -k $WEBPAGETEST_API_KEY --poll --specs testspecs.json --reporter spec ; true"
@@ -44,12 +48,10 @@
   "dependencies": {
     "bootstrap": "^3.3.5",
     "express": "^4.13.3",
-    "extract-text-webpack-plugin": "^1.0.1",
     "jquery": "^2.1.4",
     "jquery-placeholder": "^2.3.1",
     "materialize-css": "^0.97.5",
     "psi": "^2.0.2",
-    "purifycss-webpack-plugin": "^2.0.1",
     "swiper": "^3.3.0"
   }
 }
