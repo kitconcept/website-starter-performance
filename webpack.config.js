@@ -26,7 +26,7 @@ module.exports = {
       jQuery: "jquery",
       // "_": "underscore",
     }),
-    new ExtractTextPlugin("main.css")
+    new ExtractTextPlugin("[name].css")
   ],
   resolve: {
     alias: {
@@ -39,7 +39,7 @@ module.exports = {
       { test: require.resolve("jquery"), loader: "expose?$!expose?jQuery" },
       { test: /\.js$/, loader: 'babel-loader', exclude: /node_modules/ },
       { test: /\.css$/, loader: ExtractTextPlugin.extract("style-loader", "css-loader?sourceMap") },
-      { test: /\.scss$/, loaders: ["style", "css?sourceMap", "sass?sourceMap"]},
+      { test: /\.scss$/, loader: ExtractTextPlugin.extract("style-loader", "css-loader?sourceMap!sass?sourceMap")},
       {
         test: /.*\.(gif|png|jpe?g|ico|svg)$/i,
         loaders: [
