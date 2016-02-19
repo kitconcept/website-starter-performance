@@ -19,6 +19,19 @@ require('./img/logo-white.png');
 require('./img/logo.svg');
 require('./img/logo-white.svg');
 require('./img/headerbg.jpg');
+require('./img/icon_plus-mehr.svg');
+require('./img/kunden_logo-IZA.svg');
+require('./img/kunden_logo-Jung-Zeelandia.svg');
+require('./img/kunden_logo-e-relation.svg');
+require('./img/kunden_logo-DPG.svg');
+require('./img/kunden_logo-Freitag.svg');
+require('./img/kunden_logo-DIE.svg');
+require('./img/kunden_logo-GNE.png');
+require('./img/kunden_logo-UPC.svg');
+require('./img/kunden_logo-VNC.png');
+require('./img/kunden_logo-BION.png');
+require('./img/kunden_logo-Uni-Bonn.svg');
+require('./img/kunden_logo-Uniklinik-Bonn.svg');
 
 $(document).ready(() => {
   $(".button-collapse").sideNav();
