@@ -139,13 +139,15 @@
     right: auto;
   }
   .atf .row:after {
-      content: "";
-      display: table;
-      clear: both;
+    content: "";
+    display: table;
+    clear: both;
   }
 
   .atf {
-    background-color: #043157; }
+    background: transparent url(headerbg.jpg) no-repeat fixed center;
+    background-size: cover;
+  }
   .atf-nav ul {
     list-style-type: none; }
   .atf-nav li {
@@ -153,10 +155,14 @@
     min-width: 90px;
     text-align: center;
     padding: 0 15px;}
-  .atf-nav li a { color: white; text-decoration: none; }
+  .atf-nav li a {
+    color: #FFFFFF;
+    font-size: 18px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    text-decoration: none; }
   .atf-nav .brand-logo {
     width: 200px;
-    margin-top: 5px;
     position: absolute;
     color: #fff;
     display: inline-block;
@@ -173,23 +179,32 @@
   .motto {
     margin-bottom: 30px; }
   .motto p {
-    font-size: 1.2rem;
-    color: white;
+    color: #FFFFFF;
+    font-size: 18px;
     font-style: italic;
+    letter-spacing: 1px;
+    line-height: 23px;
     text-transform: uppercase; }
 
   .kcbrown {
-    color: #B4AD92; }
+    color: #BBB5AB; }
 
-  .text-light {
-    font-weight: 200;}
-
-    .atf .title {
-      font-size: 3.2rem;
-      text-transform: uppercase;
-      margin: 0; }
-    .atf .title--main {
-        font-weight: 500; }
+  .atf .title {
+    font-size: 3.2rem;
+    text-transform: uppercase;
+    margin: 0; }
+  .atf .title--main {
+    font-size: 60px;
+    font-weight: 500;
+    line-height: 62px;
+    letter-spacing: .5px;
+   }
+  .atf .title--premain {
+    font-size: 55px;
+    font-weight: 200;
+    line-height: 62px;
+    letter-spacing: .5px;
+    }
     @media only screen and (max-width: 992px) {
       .atf .title--main {
         font-size: 2.6rem; } }
@@ -198,8 +213,12 @@
       font-size: 1.3rem;
       line-height: 2.2rem; }
     .atf .description--main {
-      font-weight: 200;
-      color: white; }
+      color: #FFFFFF;
+      font-size: 24px;
+      font-weight: 300;
+      line-height: 40px;
+      letter-spacing: .25px;
+    }
     .arrow {
       position: absolute;
       bottom: 0px;
@@ -218,12 +237,12 @@
   <div class="atf" style="height: 100vh;">
 
     <nav id="navigation" class="atf-nav nav-wrapper nav-container hide-on-med-and-down">
-      <h1><img class="brand-logo" src="logo-white.png" alt="kitconcept - driven by quality, powered by passion" /></h1>
+      <h1><img class="brand-logo" src="logo-white.svg" alt="kitconcept - driven by quality, powered by passion" /></h1>
       <ul class="right">
         <li><a href="#leistungen">Leistungen</a></li>
         <li><a href="#kunden">Kunden</a></li>
         <li><a href="#profil">Profil</a></li>
-        <li><a href="#kontakt">Kontact</a></li>
+        <li><a href="#kontakt">Kontakt</a></li>
       </ul>
     </nav>
 
@@ -232,7 +251,7 @@
         <div class="nav-wrapper nav-container">
           <h1>
             <a id="logo-container" href="#navigation">
-              <img class="brand-logo" src="logo.png" alt="kitconcept - driven by quality, powered by passion" />
+              <img class="brand-logo" src="logo.svg" alt="kitconcept - driven by quality, powered by passion" />
             </a>
           </h1>
           <a href="#" data-activates="nav-mobile" class="button-collapse">
@@ -241,13 +260,13 @@
             <li class="active"><a href="#leistungen">Leistungen</a></li>
             <li><a href="#kunden">Kunden</a></li>
             <li><a href="#profil">Profil</a></li>
-            <li><a href="#kontakt">Kontact</a></li>
+            <li><a href="#kontakt">Kontakt</a></li>
           </ul>
           <ul class="side-nav" id="nav-mobile">
             <li><a href="#leistungen">Leistungen</a></li>
             <li><a href="#kunden">Kunden</a></li>
             <li><a href="#profil">Profil</a></li>
-            <li><a href="#kontakt">Kontact</a></li>
+            <li><a href="#kontakt">Kontakt</a></li>
           </ul>
         </div>
       </nav>
@@ -263,7 +282,7 @@
       </div>
       <div class="row">
         <div class="col s12 m7">
-          <h1 class="title title--main kcbrown"><span class="text-light">Die experten für</span> Professionelle web-lösungen</h1>
+          <h1 class="title title--main kcbrown"><span class="title--premain">Die experten für</span> Professionelle web-lösungen</h1>
           <p class="description description--main">kitconcept unterstützt Unternehmen, öffentliche Einrichtungen und andere Organisationen bei der technischen Umsetzung von Webseiten, Portalen, Intranets oder mobilen Anwendungen auf Basis von leistungsstarken Open-Source-Lösungen.</p>
         </div>
         <!-- <div class="col s5 pull-7">

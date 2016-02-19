@@ -16,6 +16,9 @@ require('./img/logo-intranet.png');
 require('./img/logo-mobile.png');
 require('./img/logo-consulting.png');
 require('./img/logo-white.png');
+require('./img/logo.svg');
+require('./img/logo-white.svg');
+require('./img/headerbg.jpg');
 
 $(document).ready(() => {
   $(".button-collapse").sideNav();
