@@ -7,7 +7,8 @@ module.exports = {
   entry: './src/index.js',
   output: {
     path: path.join(__dirname, 'dist'),
-    filename: 'bundle.js'
+    filename: 'bundle.js',
+    publicPath: 'http://0.0.0.0:3000/'
   },
   plugins: [
     new HtmlWebpackPlugin({
@@ -38,7 +39,7 @@ module.exports = {
       { test: require.resolve("jquery"), loader: "expose?$!expose?jQuery" },
       { test: /\.js$/, loader: 'babel-loader', exclude: /node_modules/ },
       { test: /\.css$/, loaders: ["style", "css?sourceMap"] },
-      { test: /\.scss$/, loaders: ["style", "raw", "sass?sourceMap"]},
+      { test: /\.scss$/, loaders: ["style", "css?sourceMap", "sass?sourceMap"]},
       {
         test: /.*\.(gif|png|jpe?g|ico|svg)$/i,
         loaders: [
