@@ -6,7 +6,7 @@ install:
 - npm install webpagetest -g
 script:
 - psi psi.kitconcept.com --threshold 99
-- webpagetest test http://psi.kitconcept.com  -k $WPT_API_KEY --poll --specs testspecs.json --reporter spec
+- webpagetest test http://new.kitconcept.com  -k $WPT_API_KEY --poll --specs testspecs.json --reporter spec
 notifications:
   email:
   - tisto@plone.org
