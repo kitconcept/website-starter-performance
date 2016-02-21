@@ -6,10 +6,10 @@
         "firstView": {
             "requests": 30,
             "TTFB": 500,
-            "render": 2500,
+            "render": 3500,
             "loadTime": 4000,
             "fullyLoaded": 4500,
-            "SpeedIndex": 3000,
+            "SpeedIndex": 3500,
             "responses_404": 1,
             "score_gzip": {
                 "min": 99
