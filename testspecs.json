@@ -38,8 +38,8 @@
                     "bytes": 30000
                 },
                 "image": {
-                    "requests": 10,
-                    "bytes": 300000
+                    "requests": 30,
+                    "bytes": 500000
                 }
             }
         }
