@@ -2,13 +2,13 @@ var path = require('path');
 var webpack = require('webpack');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 var ExtractTextPlugin = require("extract-text-webpack-plugin");
+const merge = require('webpack-merge');
 
-module.exports = {
+const common = {
   entry: './src/index.js',
   output: {
     path: path.join(__dirname, 'dist'),
-    filename: 'bundle.js',
-    publicPath: 'http://0.0.0.0:3000/'
+    filename: 'bundle.js'
   },
   plugins: [
     new HtmlWebpackPlugin({
@@ -39,7 +39,6 @@ module.exports = {
       { test: require.resolve("jquery"), loader: "expose?$!expose?jQuery" },
       { test: /\.js$/, loader: 'babel-loader', exclude: /node_modules/ },
       { test: /\.css$/, loaders: ["style", "css?sourceMap"] },
-      { test: /\.scss$/, loaders: ["style", "css?sourceMap", "sass?sourceMap"]},
       {
         test: /.*\.(gif|png|jpe?g|ico|svg)$/i,
         loaders: [
@@ -62,5 +61,47 @@ module.exports = {
       //   loader: 'url?limit=10000&mimetype=image/svg+xml' }
     ]
   },
-  devtool: 'source-map'
 };
+
+const TARGET = process.env.TARGET || process.env.NODE_ENV;
+
+if(TARGET === 'build' || !TARGET) {
+  module.exports = merge(common, {
+    module: {
+      loaders: [
+        { test: /\.scss$/, loaders: ["style", "css", "sass"]},
+      ]
+    },
+    plugins: [
+      new webpack.optimize.UglifyJsPlugin({
+        compress: { warnings: false }
+      })
+    ]
+  });
+}
+
+if(TARGET === 'watch') {
+  module.exports = merge(common, {
+    devtool: 'source-map',
+    devServer: {
+      hot: true,
+      inline: true,
+      progress: true,
+      stats: 'errors-only',
+      host: process.env.HOST || 'localhost',
+      port: process.env.PORT || '3000'
+    },
+    module: {
+      loaders: [
+        { test: /\.scss$/, loaders: ["style", "css?sourceMap", "sass?sourceMap"]},
+      ]
+    },
+    output: {
+      publicPath: 'http://' + (process.env.HOST || 'localhost') + ':' +
+                  (process.env.PORT || '3000') + '/'
+    },
+    plugins: [
+      new webpack.HotModuleReplacementPlugin()
+    ]
+  });
+}
