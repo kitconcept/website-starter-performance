@@ -4,7 +4,7 @@
     },
     "median": {
         "firstView": {
-            "requests": 10,
+            "requests": 30,
             "TTFB": 500,
             "render": 1000,
             "loadTime": 1500,
