@@ -52,7 +52,7 @@ module.exports = {
         test: /.*\.(gif|png|jpe?g|ico|svg)$/i,
         loaders: [
             'file-loader?name=[name].[ext]',
-            'image-webpack?progressive=true&bypassOnDebug&optimizationLevel=7&interlaced=false'
+            'image-webpack?progressive=true&optimizationLevel=7&interlaced=false'
         ]
       },
       // inline base64 URLs for <=8k images, direct URLs for the rest
