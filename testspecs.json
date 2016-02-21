@@ -23,7 +23,7 @@
             "breakdown": {
                 "html": {
                     "requests": 3,
-                    "bytes": 5000
+                    "bytes": 10000
                 },
                 "js": {
                     "requests": 2,
@@ -31,7 +31,7 @@
                 },
                 "css": {
                     "requests": 1,
-                    "bytes": 30000
+                    "bytes": 150000
                 },
                 "font": {
                     "requests": 1,
