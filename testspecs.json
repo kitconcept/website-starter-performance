@@ -34,8 +34,8 @@
                     "bytes": 150000
                 },
                 "font": {
-                    "requests": 0,
-                    "bytes": 0
+                    "requests": 1,
+                    "bytes": 1
                 },
                 "image": {
                     "requests": 30,
