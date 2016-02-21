@@ -99,7 +99,7 @@ Create a Travis CI configuration file (".travis.yml")::
 
   language: node_js
   node_js:
-  - 4.2.1
+  - 4.3.1
   install:
   - npm install psi -g
   - npm install webpagetest -g
@@ -122,7 +122,7 @@ This will append an encrypted API key to your .travis.yml so that it looks like 
 
   language: node_js
   node_js:
-  - 4.2.1
+  - 4.3.1
   install:
   - npm install psi -g
   - npm install webpagetest -g

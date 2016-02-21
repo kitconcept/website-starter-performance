@@ -18,7 +18,7 @@
     "webpagetest": "webpagetest test http://new.kitconcept.com  -k $WEBPAGETEST_API_KEY --poll --specs testspecs.json --reporter spec ; true"
   },
   "engines": {
-    "node": "4.2.1"
+    "node": "4.3.1"
   },
   "repository": {
     "type": "git",
