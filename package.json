@@ -13,9 +13,9 @@
     "postinstall": "webpack --config ./webpack-prod.config.js --progress --colors",
     "start": "node server.js",
     "server:prod": "http-server dist --cors",
-    "deploy": "ssh kitconcept@kitconcept.com 'cd /srv/psi.kitconcept.com; git checkout -f master; git pull; npm install; npm run build'",
-    "psi": "psi psi.kitconcept.com --threshold 99 ; true",
-    "webpagetest": "webpagetest test http://psi.kitconcept.com  -k $WEBPAGETEST_API_KEY --poll --specs testspecs.json --reporter spec ; true"
+    "deploy": "ssh kitconcept@kitconcept.com 'cd /srv/new.kitconcept.com; git checkout -f master; git pull; npm install; npm run build'",
+    "psi": "psi new.kitconcept.com --threshold 99 ; true",
+    "webpagetest": "webpagetest test http://new.kitconcept.com  -k $WEBPAGETEST_API_KEY --poll --specs testspecs.json --reporter spec ; true"
   },
   "engines": {
     "node": "4.2.1"
@@ -35,10 +35,12 @@
     "babel-loader": "^5.3.2",
     "css-loader": "^0.23.0",
     "expose-loader": "^0.7.1",
+    "extract-text-webpack-plugin": "^1.0.1",
     "file-loader": "^0.8.5",
     "html-webpack-plugin": "^1.7.0",
     "image-webpack-loader": "^1.6.2",
     "node-sass": "^3.4.2",
+    "purifycss-webpack-plugin": "^2.0.3",
     "sass-loader": "^3.1.2",
     "style-loader": "^0.13.0",
     "url-loader": "^0.5.6",
