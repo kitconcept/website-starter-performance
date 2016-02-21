@@ -27,15 +27,15 @@
                 },
                 "js": {
                     "requests": 2,
-                    "bytes": 80000
+                    "bytes": 300000
                 },
                 "css": {
-                    "requests": 1,
+                    "requests": 2,
                     "bytes": 150000
                 },
                 "font": {
-                    "requests": 1,
-                    "bytes": 30000
+                    "requests": 0,
+                    "bytes": 0
                 },
                 "image": {
                     "requests": 30,
