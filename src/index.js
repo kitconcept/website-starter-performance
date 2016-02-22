@@ -11,7 +11,6 @@ require('./img/logo.png');
 require('./img/logo-with-moto.png');
 require('./img/down-arrow.png');
 require('./img/logo-portals.png');
-require('./img/service-link.png');
 require('./img/logo-intranet.png');
 require('./img/logo-mobile.png');
 require('./img/logo-consulting.png');
@@ -32,6 +31,12 @@ require('./img/kunden_logo-VNC.png');
 require('./img/kunden_logo-BION.png');
 require('./img/kunden_logo-Uni-Bonn.svg');
 require('./img/kunden_logo-Uniklinik-Bonn.svg');
+require('./img/profil_bg.jpg');
+require('./img/profil_timo.png');
+require('./img/team_timo.png');
+require('./img/team_victor.png');
+require('./img/team_carsten.png');
+require('./img/kontakt_bg.jpg');
 
 $(document).ready(() => {
   $(".button-collapse").sideNav();
