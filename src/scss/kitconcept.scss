@@ -638,6 +638,13 @@ nav {
 .swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {
     margin: 0 2px;
 }
+
+.swiper-container-horizontal > .swiper-pagination-bullets {
+  right: 0;
+  margin: 0 auto;
+  width: 77%;
+}
+
 .swiper-pagination-bullet {
   color: $kitconcept-brown;
   font-size: 14px;
