@@ -10,7 +10,7 @@
     "postinstall": "webpack --config ./webpack-prod.config.js --progress --colors",
     "start": "node server.js",
     "deploy": "ssh kitconcept@kitconcept.com 'cd /srv/psi.kitconcept.com; git checkout -f master; git pull; npm install; npm run build'",
-    "psi": "psi psi.kitconcept.com --threshold 99 ; true",
+    "psi": "psi psi.kitconcept.com --threshold 96 ; true",
     "webpagetest": "webpagetest test http://psi.kitconcept.com  -k $WEBPAGETEST_API_KEY --poll --specs testspecs.json --reporter spec ; true"
   },
   "engines": {
