@@ -5,7 +5,7 @@ install:
 - npm install psi -g
 - npm install webpagetest -g
 script:
-- psi psi.kitconcept.com --threshold 99
+- psi psi.kitconcept.com --threshold 96
 - webpagetest test http://psi.kitconcept.com  -k $WPT_API_KEY --poll --specs testspecs.json --reporter spec
 notifications:
   email:
